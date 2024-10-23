@@ -33,7 +33,7 @@ const LoginPage = () => {
             token: loggedIn.token
           })
         )
-        navigate("/homepage")
+        navigate("/")
       }
 
     } catch (err) {
