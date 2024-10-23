@@ -18,7 +18,7 @@ const ListingDetails = () => {
   const getListingDetails = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3001/properties/${listingId}`,
+        `https://rental-app-99fz.vercel.app/api/properties/${listingId}`,
         {
           method: "GET",
         }
@@ -83,7 +83,7 @@ const ListingDetails = () => {
         <div className="photos">
           {listing.listingPhotoPaths?.map((item) => (
             <img
-              src={`http://localhost:3001/${item.replace("public", "")}`}
+              src={`https://rental-app-99fz.vercel.app/api/${item.replace("public", "")}`}
               alt="listing photo"
             />
           ))}
@@ -121,7 +121,7 @@ const ListingDetails = () => {
 
         <div className="profile">
           <img
-            src={`http://localhost:3001/${listing.creator.profileImagePath.replace(
+            src={`https://rental-app-99fz.vercel.app/api/${listing.creator.profileImagePath.replace(
               "public",
               ""
             )}`}
