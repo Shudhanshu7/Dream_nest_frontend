@@ -17,7 +17,7 @@ const SearchPage = () => {
 
   const getSearchListings = async () => {
     try {
-      const response = await fetch(`https://rental-app-99fz.vercel.app/api/properties/search/${search}`, {
+      const response = await fetch(`https://rental-app-99fz.vercel.app/properties/search/${search}`, {
         method: "GET"
       })
 
