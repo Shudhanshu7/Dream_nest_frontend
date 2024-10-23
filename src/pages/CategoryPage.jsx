@@ -18,7 +18,7 @@ const CategoryPage = () => {
   const getFeedListings = async () => {
     try {
       const response = await fetch(
-          `https://rental-app-99fz.vercel.app/properties?category=${category}`,
+          `https://rental-app-99fz.vercel.app/api/properties?category=${category}`,
         {
           method: "GET",
         }
