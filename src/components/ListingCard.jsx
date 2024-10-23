@@ -48,7 +48,7 @@ const ListingCard = ({
   const patchWishList = async () => {
     if (user?._id !== creator._id) {
     const response = await fetch(
-      `https://rental-app-99fz.vercel.app/api/users/${user?._id}/${listingId}`,
+      `http://localhost:3001/users/${user?._id}/${listingId}`,
       {
         method: "PATCH",
         header: {
@@ -76,7 +76,7 @@ const ListingCard = ({
           {listingPhotoPaths?.map((photo, index) => (
             <div key={index} className="slide">
               <img
-                src={`https://rental-app-99fz.vercel.app/api/${photo?.replace("public", "")}`}
+                src={`http://localhost:3001/${photo?.replace("public", "")}`}
                 alt={`photo ${index + 1}`}
               />
               <div
