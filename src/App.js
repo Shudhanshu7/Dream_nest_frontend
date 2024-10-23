@@ -17,8 +17,8 @@ function App() {
     <div>
       <BrowserRouter>
       <Routes>
-        <Route path="/" element={<RegisterPage/>}/>
-        <Route path="/homepage" element={<HomePage/>}/>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/register" element={<RegisterPage/>}/>
         <Route path="/login" element={<LoginPage/>}/>
         <Route path="/create-listing" element={<CreateListing/>}/>
         <Route path="/properties/:listingId" element={<ListingDetails/>}/>
