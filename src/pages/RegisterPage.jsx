@@ -39,7 +39,7 @@ const RegisterPage = () => {
         register_form.append(key, formData[key])
       }
 
-      const response = await fetch("https://rental-app-99fz.vercel.app/api/auth/register", {
+      const response = await fetch("https://rental-app-99fz.vercel.app/auth/register", {
         method: "POST",
         body: register_form
       })
