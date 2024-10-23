@@ -17,7 +17,7 @@ const TripList = () => {
   const getTripList = async () => {
     try {
       const response = await fetch(
-        `https://rental-app-99fz.vercel.app/api/users/${userId}/trips`,
+        `https://rental-app-99fz.vercel.app/users/${userId}/trips`,
         {
           method: "GET",
         }
