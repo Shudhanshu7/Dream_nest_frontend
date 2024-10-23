@@ -51,7 +51,7 @@ const ListingDetails = () => {
         userDetails,
       };
 
-      const response = await fetch("https://rental-app-99fz.vercel.app/bookings/create", {
+      const response = await fetch("https://rental-app-99fz.vercel.app/api/bookings/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
