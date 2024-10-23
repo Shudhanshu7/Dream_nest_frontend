@@ -128,7 +128,7 @@ const CreateListing = () => {
       });
 
       /* Send a POST request to server */
-      const response = await fetch("https://rental-app-99fz.vercel.app/api/properties/create", {
+      const response = await fetch("https://rental-app-99fz.vercel.app/properties/create", {
         method: "POST",
         body: listingForm,
       });
