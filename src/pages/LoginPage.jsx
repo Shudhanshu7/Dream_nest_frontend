@@ -15,7 +15,7 @@ const LoginPage = () => {
     e.preventDefault()
 
     try {
-      const response = await fetch ("https://rental-app-orpin.vercel.app/auth/login", {
+      const response = await fetch ("https://rental-app-2.onrender.com/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
