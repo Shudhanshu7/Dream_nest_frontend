@@ -128,7 +128,7 @@ const CreateListing = () => {
       });
 
       /* Send a POST request to server */
-      const response = await fetch("https://rental-app-orpin.vercel.app/properties/create", {
+      const response = await fetch("https://rental-app-2.onrender.com/properties/create", {
         method: "POST",
         body: listingForm,
       });
