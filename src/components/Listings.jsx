@@ -18,8 +18,8 @@ const Listings = () => {
     try {
       const response = await fetch(
         selectedCategory !== "All"
-          ? `https://rental-app-orpin.vercel.app/properties?category=${selectedCategory}`
-          : "https://rental-app-orpin.vercel.app/properties",
+          ? `https://rental-app-2.onrender.com/properties?category=${selectedCategory}`
+          : "https://rental-app-2.onrender.com/properties",
         {
           method: "GET",
         }
