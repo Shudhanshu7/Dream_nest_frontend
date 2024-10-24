@@ -18,7 +18,7 @@ const CategoryPage = () => {
   const getFeedListings = async () => {
     try {
       const response = await fetch(
-          `https://rental-app-orpin.vercel.app/properties?category=${category}`,
+          `https://rental-app-2.onrender.com/properties?category=${category}`,
         {
           method: "GET",
         }
