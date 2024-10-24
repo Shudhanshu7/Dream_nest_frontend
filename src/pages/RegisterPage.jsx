@@ -39,7 +39,7 @@ const RegisterPage = () => {
         register_form.append(key, formData[key])
       }
 
-      const response = await fetch("https://rental-app-orpin.vercel.app/auth/register", {
+      const response = await fetch("https://rental-app-2.onrender.com/auth/register", {
         method: "POST",
         body: register_form
       })
