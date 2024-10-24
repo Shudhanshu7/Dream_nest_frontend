@@ -18,7 +18,7 @@ const ListingDetails = () => {
   const getListingDetails = async () => {
     try {
       const response = await fetch(
-        `https://rental-app-orpin.vercel.app/properties/${listingId}`,
+        `https://rental-app-2.onrender.com/properties/${listingId}`,
         {
           method: "GET",
         }
@@ -51,7 +51,7 @@ const ListingDetails = () => {
         userDetails,
       };
 
-      const response = await fetch("https://rental-app-orpin.vercel.app/bookings/create", {
+      const response = await fetch("https://rental-app-2.onrender.com/bookings/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -83,7 +83,7 @@ const ListingDetails = () => {
         <div className="photos">
           {listing.listingPhotoPaths?.map((item) => (
             <img
-              src={`https://rental-app-orpin.vercel.app/${item.replace("public", "")}`}
+              src={`https://rental-app-2.onrender.com/${item.replace("public", "")}`}
               alt="listing photo"
             />
           ))}
@@ -121,7 +121,7 @@ const ListingDetails = () => {
 
         <div className="profile">
           <img
-            src={`https://rental-app-orpin.vercel.app/${listing.creator.profileImagePath.replace(
+            src={`https://rental-app-2.onrender.com/${listing.creator.profileImagePath.replace(
               "public",
               ""
             )}`}
