@@ -28,7 +28,7 @@ const ListingDetails = () => {
       setListing(data);
       setLoading(false);
     } catch (err) {
-      console.log("Fetch Listing Details Failed", err.message);
+      alert("Fetch Listing Details Failed", err.message);
     }
   };
 
@@ -64,7 +64,7 @@ const ListingDetails = () => {
         alert("the owner will contact you soon.");
       }
     } catch (err) {
-      console.log("Submit Booking Failed.", err.message);
+      alert("Submit Booking Failed.", err.message);
     }
   };
 
