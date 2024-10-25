@@ -24,7 +24,7 @@ const PropertyList = () => {
       dispatch(setPropertyList(data))
       setLoading(false)
     } catch (err) {
-      console.log("Fetch all properties failed", err.message)
+      alert("Fetch all properties failed", err.message)
     }
   }
 
