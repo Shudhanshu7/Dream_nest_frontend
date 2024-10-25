@@ -33,11 +33,12 @@ const LoginPage = () => {
             token: loggedIn.token
           })
         )
+        alert("Login successful");
         navigate("/")
       }
 
     } catch (err) {
-      console.log("Login failed", err.message)
+      alert("Login failed", err.message)
     }
   }
 
