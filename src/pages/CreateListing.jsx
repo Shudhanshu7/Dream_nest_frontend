@@ -134,10 +134,11 @@ const CreateListing = () => {
       });
 
       if (response.ok) {
+        alert("Publish Listing Successful");
         navigate("/");
       }
     } catch (err) {
-      console.log("Publish Listing failed", err.message);
+      alert("Publish Listing failed", err.message);
     }
   };
   return (
