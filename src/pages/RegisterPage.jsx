@@ -45,10 +45,11 @@ const RegisterPage = () => {
       })
 
       if (response.ok) {
+        alert("Registeration successful");
         navigate("/login")
       }
     } catch (err) {
-      console.log("Registration failed", err.message)
+      alert("Registration failed", err.message)
     }
   }
 
